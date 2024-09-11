@@ -23,5 +23,11 @@ int main(){
   double cost = 100.99;
   int newCost = (int)cost;
   cout << "type case value: " << newCost << endl;
+
+  //input
+  int favNum;
+  cout << "Enter fav number: ";
+  cin >> favNum;
+  cout << "you enter: " << favNum << endl;
   return 0;
 };
