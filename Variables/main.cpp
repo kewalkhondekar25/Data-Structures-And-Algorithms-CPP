@@ -18,6 +18,10 @@ int main(){
   cout << "isAdult: " << isAdult << endl << "Bool Byte: " << sizeof(isAdult) << endl;
   //double
   double price = 100.95;
-  
+
+  //type casting
+  double cost = 100.99;
+  int newCost = (int)cost;
+  cout << "type case value: " << newCost << endl;
   return 0;
 };
