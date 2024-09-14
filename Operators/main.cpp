@@ -20,4 +20,7 @@ int main(){
   //relational Operators
   cout << (3 < 5) << endl << (69 == 69) << endl << (3 >= 4) << endl << (10 != 9) << endl;
 
+  //logical operators
+  cout << ((3 > 1) || (5 > 9)) << endl;
+  cout << ((3 > 1) && (5 > 9)) << endl;
 };
