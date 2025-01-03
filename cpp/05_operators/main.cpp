@@ -19,5 +19,16 @@ int main() {
   int z = 3;
   cout << "a/b: " << x/y << endl;
 
+  //relational operators
+  cout << "arithmetic operators \n";
+  cout << "x < y?: " << (x < y) << endl;
+  cout << "x > y?: " << (x > y) << endl;
+  cout << "x >= y?: " << (x >= y) << endl;
+  cout << "x != y?: " << (x != y) << endl;
+
+  //logical operators
+  cout << "OR: " << ( (3 < 5) || (3 > 5)) << endl;
+  cout << "AND: " << ( (3 > 1) && (1 > 3)) << endl;
+
   return 0;
 }
