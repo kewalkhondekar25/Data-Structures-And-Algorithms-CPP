@@ -12,15 +12,14 @@ int main() {
 
   //for
   for(int i = 1; i <= 10; i++){
-    cout << "i: " << i << endl;
+    cout << i << endl;
   };
 
-  //sum of n
   int sum = 0, n = 5;
-  for (int i = 1; i <= n; i++){
+  for(int i = 1; i <= n; i++){
     sum += i;
-  };
+  }
   cout << "sum: " << sum;
-  
+
   return 0;
 }
