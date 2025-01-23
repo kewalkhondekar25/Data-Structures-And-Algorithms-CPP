@@ -12,6 +12,7 @@ int main() {
   //smallest in an array
   for(int i = 0; i < size; i++){
 
+    // min(arr[i], smallest)
     if(arr[i] < smallest){
       smallest = arr[i];
     };
@@ -24,6 +25,7 @@ int main() {
   int largest = INT_MIN;
   for(int i = 0; i < size; i++){
 
+    // max(arr[i], largest)
     if(arr[i] > largest){
       largest = arr[i];
     };
