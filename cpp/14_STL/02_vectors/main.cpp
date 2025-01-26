@@ -19,6 +19,20 @@ int main()
 
   cout << vec2[0].first << endl;
   cout << vec2[1].second << endl;
+
+  //3 containers
+  vector<int> vec3(3);
+  cout << "vec3 size: " << vec3.size() << endl;
+
+  //container of size 5 having 100 value each
+  vector<int> vec4(5, 100);
+  cout << "container: " << endl;
+  for(int i = 0; i < 5; i++){
+    cout << vec4[i] << endl;
+  };
+
+  //copying 1 vector another
+  vector<int> vec5(vec4);
   
   return 0;
 }
