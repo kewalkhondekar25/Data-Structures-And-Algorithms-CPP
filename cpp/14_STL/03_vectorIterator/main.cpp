@@ -30,7 +30,7 @@ int main() {
   vector.erase(vector.begin() + 1, vector.begin() + 5);
   for(auto it : vector){
     cout << "erased: " << it << endl;
-  }
+  };
 
   return 0;
 };
