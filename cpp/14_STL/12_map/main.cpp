@@ -19,7 +19,7 @@ int main() {
   cout << mp[4] << endl;  //0
 
   auto it = mp.find(1);
-  // cout << *(it) << endl;
+  // cout << *(it).second << endl;  //{69}
 
   return 0;
 };
