@@ -44,6 +44,9 @@ INPUT - 371
 OUTPUT - It's a Armstrong number
 
 INPUT - 1634
+OUTPUT - It's a Armstrong number
+
+INPUT - 121
 OUTPUT - It's not a Armstrong number
 
 */
