@@ -2,24 +2,26 @@
 using namespace std;
 
 int main(){
-  
-  string s;
-  cout << "enter string: ";
-  cin >> s;
 
-  int hash[26] = {0};
-  for(int i = 0; i < s.size(); i++){
-    hash[s[i] - 'a'] += 1;
-  }
+  int n;
+  cin >> n;
+  int arr[n];
+
+  for(int i = 0; i < n; i++){
+    cin >> arr[i];
+  };
+
+  map<int, int> mp;
+  for(int i = 0; i < n; i++){
+    mp[arr[i]]++;
+  };
 
   int q;
-  cout << "how many char to test: ";
   cin >> q;
   while(q--){
-    char ch;
-    cout << "enter char: ";
-    cin >> ch;
-    cout << "apperance: " << hash[ch - 'a'] << endl;
+    int num;
+    cin >> num;
+    cout << num << " appears: " << mp[num];
   }
 
 
