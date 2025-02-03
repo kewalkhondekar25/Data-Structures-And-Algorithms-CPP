@@ -3,30 +3,25 @@ using namespace std;
 
 int main(){
   
-  int n;
-  cout << "enter no of elem: " << endl;
-  cin >> n;
-  int arr[n];
+  string s;
+  cout << "enter string: ";
+  cin >> s;
 
-  for(int i = 0; i < n; i++){
-    cout << "enter elem: ";
-    cin >> arr[i];
-  };
-
-  int hash[13] = {0};
-  for(int i = 0; i < n; i++){
-    hash[arr[i]] += 1;
-  };
+  int hash[26] = {0};
+  for(int i = 0; i < s.size(); i++){
+    hash[s[i] - 'a'] += 1;
+  }
 
   int q;
-  cout << "enter queries num: ";
+  cout << "how many char to test: ";
   cin >> q;
   while(q--){
-    int num;
-    cout << "enter num to check: ";
-    cin >> num;
-    cout << hash[num] << endl;
-  };
+    char ch;
+    cout << "enter char: ";
+    cin >> ch;
+    cout << "apperance: " << hash[ch - 'a'] << endl;
+  }
+
 
   return 0;
 }
