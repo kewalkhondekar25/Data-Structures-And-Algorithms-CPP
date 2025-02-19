@@ -2,22 +2,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int largest(int arr[], int n){
+int find_largest(int arr[], int size){
 
-  int max = arr[0];
-  for(int i = 0; i < n; i++){
-    if(arr[i] > max){
-      max = arr[i];
+  int largest = arr[0];
+
+  for(int i = 0; i < size; i++){
+    if(arr[i] > largest){
+      largest = arr[i];
     };
   };
-  return max;
-}
+
+  return largest;
+};
 
 int main(){
 
-  int arr[5] = {3, 2, 1, 5, 2};
-  int n = sizeof(arr) / sizeof(arr[0]);
-  cout << largest(arr, n);
+  int arr[5] = {1, 8, 7, 56, 90};
+
+  int size = sizeof(arr) / sizeof(arr[0]);
+
+  cout << find_largest(arr, size);
 };
 
-//[3, 2, 1, 5, 2]
+//largest - 90
+//t.c - O(n)
