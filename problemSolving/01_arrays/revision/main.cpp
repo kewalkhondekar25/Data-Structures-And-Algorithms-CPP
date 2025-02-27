@@ -3,24 +3,29 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool is_sorted(vector<int> &arr, int n){
+int remove_duplicate(vector<int> &arr, int n){
 
-  for(int i = 1; i < n; i++){
-    if(arr[i] >= arr[i - 1]){
+  int i = 0;
 
-    }
-    else{
-      return false;
+  for(int j = 1; j < n; j++){
+    if(arr[j] > arr[i]){
+      arr[i + 1] = arr[j];
+      i++;
     }
   };
-  return true;
+
+  return i + 1;
 };
 
 int main(){
 
-  vector<int> arr = { 1, 2, 3, 7, 7};
+  vector<int> arr = { 1, 1, 2, 2, 3, 3};
+  
+  cout << "Number of uniques: " << remove_duplicate(arr, arr.size()) << endl;
 
-  cout << "is sorted: " << is_sorted(arr, arr.size());
+  for(int val : arr){
+    cout << val << endl;
+  };
 
   return 0;
-}
+};
