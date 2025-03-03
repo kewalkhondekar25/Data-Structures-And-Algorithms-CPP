@@ -1,29 +1,25 @@
-//find largest element in an array
-
 #include <bits/stdc++.h>
 using namespace std;
 
-int remove_duplicate(vector<int> &arr, int n){
+vector<int> left_rotate(vector<int> &arr, int n){
 
-  int i = 0;
+  int temp = arr[0];
 
-  for(int j = 1; j < n; j++){
-    if(arr[j] > arr[i]){
-      arr[i + 1] = arr[j];
-      i++;
-    }
+  for(int i = 1; i < n; i++){
+    arr[i - 1] = arr[i];
   };
+  arr[n - 1] = temp;
 
-  return i + 1;
+  return arr;
 };
 
 int main(){
 
-  vector<int> arr = { 1, 1, 2, 2, 3, 3};
+  vector<int> arr = { 1, 2, 3, 4, 5};
   
-  cout << "Number of uniques: " << remove_duplicate(arr, arr.size()) << endl;
+  vector<int> result =  left_rotate(arr, arr.size());
 
-  for(int val : arr){
+  for(int val : result){
     cout << val << endl;
   };
 
