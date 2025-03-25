@@ -11,8 +11,11 @@ int main(){
   int* ptr = &b;
   cout << ptr << endl;//0x61ff04
 
+  //pointer to pointer
+  int** ptr2 = &ptr;
+  cout << ptr2 << endl;
+  
   float c = 89.95;
-
   float* fPtr = &c;
   cout << fPtr;//0x61fefc
 
