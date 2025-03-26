@@ -16,7 +16,16 @@ public:
     this->name = name;
     this->department = department;
     this->subject = subject;
-  }
+  };
+
+  //copy constructor
+  Teacher(Teacher &obj){
+    cout << "copy constructor called\n";
+    this->name = obj.name;
+    this->subject = obj.subject;
+    this->department = obj.subject;
+  };
+
   string name;
   string department;
   string subject;
