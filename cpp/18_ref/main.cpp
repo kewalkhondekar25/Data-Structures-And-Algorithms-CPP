@@ -1,10 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void swapFunc(int* a, int* b){
-  int temp = *a;
-  *a = *b;
-  *b = temp;
+void swapFunc(int* p, int* q){//call by address - stores address
+  int temp = *p;
+  *p = *q;
+  *q = temp;
+};
+
+void exchange(int &a, int &b){//call by reference - stores alias
+  int temp = a;
+  a = b;
+  b = temp;
 };
 
 int main(){
@@ -22,6 +28,12 @@ int main(){
 
   swapFunc(&x, &y);
   cout << "x: " << x << endl << "y: " << y << endl;
+
+  int p = 1, q = 2;
+  cout << "p: " << p << endl << "q: " << q << endl;
+
+  exchange(p, q);
+  cout << "p: " << p << endl << "q: " << q << endl;
 
   return 0;
 };
