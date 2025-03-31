@@ -15,10 +15,25 @@ class Test {
     };
 };
 
+class Demo {
+  
+  int x, y;
+
+  public:
+    void get(int x, int y){
+      this->x = x;//(*this).x
+      this->y = y;
+      cout << "x: " << x << endl << "y: " << y << endl;
+    };
+};
+
 int main(){
 
   Test t1;
   t1.get();
   
+  Demo d1;
+  d1.get(1, 2);
+
   return 0;
 }
