@@ -34,6 +34,28 @@ class Circle {
     };
 };
 
+class Student {
+
+  char name[20], course[20];
+  float fees;
+
+  public:
+    Student(char name[20], char course[20]){
+      strcpy(this->name, name);
+      strcpy(this->course, course);
+      fees = 0;
+    };
+
+    Student(char name[20], char course[20], float fees){
+      Student::Student(name, course);
+      this->fees = fees;
+    };
+
+    void get(){
+      cout << name << endl << course << endl << fees << endl;
+    };
+};
+
 int main(){
 
   Test t; 
@@ -43,6 +65,9 @@ int main(){
   Circle c2(4);
   c1.area();
   c2.area();
+
+  Student s;
+  
 
   return 0;
 }
