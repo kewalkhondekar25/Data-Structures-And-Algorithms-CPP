@@ -39,6 +39,8 @@ int main(){
   //reverse a string
   reverse(str2.begin(), str2.end());
   cout << str2 << endl;//vct => tcv
+
+  string program;
   
   return 0;
 };
