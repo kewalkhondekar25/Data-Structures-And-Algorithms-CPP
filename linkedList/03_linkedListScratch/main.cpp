@@ -52,6 +52,7 @@ int main(){
   ll.push_front(3);
 
   ll.printLL();
+  ll.printLL();
   
   return 0;
 }
