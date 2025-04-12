@@ -12,6 +12,10 @@ int leftRotateByOne(vector<int> &arr, int n){
   arr[n - 1] = temp;
 };
 
+int rightRotate(vector<int> &arr, int n){
+  
+}
+
 int main(){
 
   vector<int> arr = { 1, 2, 3, 4, 5 };
