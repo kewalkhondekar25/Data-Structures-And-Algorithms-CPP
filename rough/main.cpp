@@ -14,6 +14,8 @@ int leftRotateByOne(vector<int> &arr, int n){
 
 int rightRotate(vector<int> &arr, int n){
   
+  int temp  = arr[0];
+  
 }
 
 int main(){
