@@ -53,6 +53,19 @@ class List{
       delete temp;
     };
 
+    void pop_back(){
+      if(head == NULL){
+        return;
+      };
+      Node* temp = tail;
+      while(temp->next != tail){
+        temp = temp->next;
+      };
+      temp->next = NULL;
+      delete tail;
+      tail = temp;
+    }
+
     void printLinkedList(){
       Node* temp = head;
       while(temp != NULL){
