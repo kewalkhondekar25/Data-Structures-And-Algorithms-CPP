@@ -57,7 +57,7 @@ class List{
       if(head == NULL){
         return;
       };
-      Node* temp = tail;
+      Node* temp = head;
       while(temp->next != tail){
         temp = temp->next;
       };
@@ -88,6 +88,10 @@ int main(){
 
   cout << "pop front" << endl;
   ll.pop_front();
+  ll.printLinkedList();
+
+  cout << "pop back" << endl;
+  ll.pop_back();
   ll.printLinkedList();
 
   return 0;
